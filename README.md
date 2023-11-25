@@ -84,7 +84,7 @@ DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
     const minitable = new MiniTable(minitable_elem);
   ```
 
-  Please note that, in this case, the data retrieved at the given url must have a structure like:
+  Please note that, in this case, the data retrieved at the given url should have a structure like:
 
   ```JSON
   {
