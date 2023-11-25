@@ -1,5 +1,5 @@
 # minitables
-DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
+DataTables equivalent, dependent on Bootstrap 5, but not on jquery. Please use the github_demo.html file to see a working demo. Everything is in French by default, but can easily be changed in the code.
 
 ## Usage:
 - ### JsonMinitable
