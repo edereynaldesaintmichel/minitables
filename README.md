@@ -120,10 +120,10 @@ DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
       }
     ],
     "recordsTotal": 2,
-    "recordsFiltered": 2,
+    "recordsFiltered": 2
   }
   ```
-  recordsTotal and recordsFiltered are optional, though, and are specific to the serverside minitables, which we are going to dive into right now.
+  recordsTotal and recordsFiltered are optional though, and are specific to the serverside minitables.
 
   
 - ### Serverside Minitable
@@ -133,4 +133,4 @@ DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
   (which, url decoded, looks like)
   https://github_demo.test/get_data?start=0&order=order={"dir":"asc","column":"login"}&search={"global":"","columns":{"login":{"value":"ggobi","exact":false}}}
   ```
-  and send an ordered, filtered, and paginated data accordingly
+  and send back an ordered, filtered, and paginated data in the same format as specified above.
