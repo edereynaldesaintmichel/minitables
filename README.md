@@ -46,7 +46,7 @@ DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
         const json_minitable = new JsonMiniTable(json_minitable_elem, values);
   ```
 
-- ### Normal Minitable
+- ### Client Side Minitable
   When using a "normal" minitable, you have to specify the column headers of the table. Also, you need to specify the url to call to get the json data of the table, in the data-url attribute of the table element.
 
   HTML
@@ -123,3 +123,11 @@ DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
   }
   ```
   recordsTotal and recordsFiltered are optional, though, and are specific to the serverside minitables, which we are going to dive into right now.
+- ### Serverside Minitable
+  In server-side minitables, searching and ordering are made in the server. So your server should be able to handle this kind of get request
+  ```
+  https://github_demo.test/get_data?start=0&order={"dir"%3A"asc"%2C"column"%3A"login"}&search={"global"%3A""%2C"columns"%3A{"login"%3A{"value"%3A"ggobi"%2C"exact"%3Afalse}}}
+  (which, url decoded, looks like)
+  https://github_demo.test/get_data?start=0&order=order={"dir":"asc","column":"login"}&search={"global":"","columns":{"login":{"value":"ggobi","exact":false}}}
+  ```
+  and send an ordered, filtered, and paginated data accordingly
