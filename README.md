@@ -122,3 +122,4 @@ DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
     "recordsFiltered": 2,
   }
   ```
+  recordsTotal and recordsFiltered are optional, though, and are specific to the serverside minitables, which we are going to dive into right now.
