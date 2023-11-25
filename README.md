@@ -4,6 +4,7 @@ DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
 ## Usage:
 - ### JsonMinitable
   Any well formatted object can be displayed with minitables.
+  
   HTML:
   ```html
   <div id="json_table_container">
