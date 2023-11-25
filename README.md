@@ -123,6 +123,8 @@ DataTables equivalent, dependent on Bootstrap 5, but not on jquery.
   }
   ```
   recordsTotal and recordsFiltered are optional, though, and are specific to the serverside minitables, which we are going to dive into right now.
+
+  
 - ### Serverside Minitable
   In server-side minitables, searching and ordering are made in the server. So your server should be able to handle this kind of get request
   ```
