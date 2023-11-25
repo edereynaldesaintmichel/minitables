@@ -1,0 +1,43 @@
+table.minitable th.sortable::after{
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    /* content: "\f0dc"; */
+    margin-left: 1rem;
+}
+
+table.minitable th.sort_desc::after{
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    content: "\f0de";
+    /* margin-left: 1rem; */
+}
+
+table.minitable th.sort_asc::after{
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    content: "\f0dd";
+    /* margin-left: 1rem; */
+}
+
+
+table.minitable thead,tbody {
+    cursor: pointer;
+}
+
+table.minitable thead th {
+    border-top: none;
+    background-color: #6c757d;
+    vertical-align: middle;
+    color: white;
+}
+
+table.minitable td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table.minitable tbody tr.selected > * {
+    box-shadow: inset 0 0 0 9999px rgba(13, 110, 253, 0.9);
+    color: white;
+  }
